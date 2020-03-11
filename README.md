@@ -2,7 +2,7 @@
 
 ## Hadoop Lab
 
-### Lab 1: HDFS Architecture
+### Lab 1: HDFS
 
 - Download the most frequently downloaded e-book (in Plain Text UTF-8) from Project Gutenberg.
 - Create a directory called **raw** inside your HDFS home directory.
