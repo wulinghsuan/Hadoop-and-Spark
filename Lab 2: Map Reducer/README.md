@@ -12,7 +12,7 @@ Get into local address and copy below two files to HDFS folder (created in Step)
 > Example: Create a new python, named **mapper2.py**, by comment `vi mapper2.py`. You will find you are in the editor page now. 
 > Copy the following code in it. 
 
-![]()
+![](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%202:%20Map%20Reducer/mapreducer_1.png)
 
 * `Shit`+`Z`+`Z` to save and exit 
 * `Ctrl`+`Z` to shop
