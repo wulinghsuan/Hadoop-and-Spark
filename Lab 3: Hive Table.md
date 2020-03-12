@@ -12,8 +12,9 @@ https://nosql-database.org/
 
 ## 3. Inspect the file (understand scheme)
 
+hdfs dfs -cat drivers_law/drivers.csv
 
-
+Create a hql file called **drivers_csv.hql** by `vim frivers_csv.hql`
 
 ## Beeline:
 
@@ -34,10 +35,14 @@ tblproperties ("skip.header.line.count"="1");
 
 show tables;
 
+Or just simply comment `!run scripts/drivers/drivers_csv.hql`
+
 ## 5. Test it (SELECT * FROM LIMIT 20)
 
 select * from linghsuan_drivers_csv
-LIMIT 20
+LIMIT 3;
+
+DESCRIBE linghsuan_drivers_csv
 
 ## 6. Create the external ORC table and populate it
 
@@ -56,3 +61,25 @@ INSERT OVERWRITE TABLE linghsuan_drivers_orc SELECT * FROM linghsuan_drivers_csv
 
 select * from linghsuan_drivers_orc
 LIMIT 3;
+
+DESCRIBE linghsuan_drivers_orc
+
+> Partition (and buckets)
+
+> user/l.hsuan/products/country=France/type=book/...
+
+> Additional Features
+
+> views
+
+> matweialized views (Hive 3)
+
+> Hive LLAP → Base for Apahe Drvid
+
+(X) 
+SELCET * FROM toto, tata
+WHERE toto.totoID = tata.totoID;
+
+(Y)
+SELECT * FROM toto
+JOIN tata ON toto.totoID = tata.totoID;
