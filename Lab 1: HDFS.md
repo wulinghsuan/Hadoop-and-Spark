@@ -2,7 +2,8 @@
 
 Comment `ssh l.wu-dsti@edge-1.au.adaltas.cloud`, and key in the password
 
-`pwd` to find where you are now
+`pwd`, print working directory, to find where you are now
+
 
 ## 1. Download the most frequently downloaded e-book (in Plain Text UTF-8) from Project Gutenberg.
 
