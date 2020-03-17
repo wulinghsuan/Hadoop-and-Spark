@@ -20,7 +20,9 @@
 
 ### [Lab 4: Hive Query](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%204:%20Hive%20Query.md)
 
-### [Lab 6: Pyspark1.md](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%206:%20Pyspark1.md)
+## Spark Lab
+
+### [Lab 6: City Revenue.md](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%206:%20Pyspark1.md)
 
 Using city_revenue dataset
 
@@ -31,7 +33,7 @@ Using city_revenue dataset
 - Total revenue per store on the year
 - For each month, best store (most revenue)
 
-### [Lab 7: Pyspark2.md](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%207:%20Pyspark2.md)
+### [Lab 7: NYC Taxi.md](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%207:%20Pyspark2.md)
 
 Using [Taxi](https://training.ververica.com/setup/taxiData.html) dataset
 
