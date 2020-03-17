@@ -1,4 +1,4 @@
-`pyspark`
+## Background Knowledge
 
 rdd1 = sc.parallelize([1, 2, 3, 4])
 rdd1.collect()
