@@ -88,7 +88,7 @@ print avg_monthly
 
 301.583333333
 
-### 3 Total revenue per city for the year
+### 3. Total revenue per city for the year
 
 Sum of all the revenue for each city.
 
@@ -124,7 +124,7 @@ df_total_city.show()
 +----------+-------+
 ```
 
-### 4 Average per month per city (on this 1 year data)
+### 4. Average per month per city (on this 1 year data)
 
 Like question 3 but devided by 12.
 
@@ -136,7 +136,7 @@ avg_city.collect()
 
 [(u'paris', 130.66666666666666), (u'troyes', 17.833333333333332), (u'lyon', 16.083333333333332), (u'toulouse', 14.75), (u'anger', 13.833333333333334), (u'orlean', 16.333333333333332), (u'rennes', 15.0), (u'nice', 16.916666666666668), (u'nantes', 17.25), (u'marseilles', 42.916666666666664)]
 
-### 5 Total revenue per store on the year
+### 5. Total revenue per store on the year
 
 Sum of all the revenue per store.
 
@@ -163,7 +163,7 @@ rdd_final.map(store_and_revenue).reduceByKey(reduce_function).collect()
 
 [(u'troyes', 214.0), (u'lyon', 193.0), (u'toulouse', 177.0), (u'marseilles_2', 231.0), (u'anger', 166.0), (u'paris_3', 330.0), (u'paris_1', 596.0), (u'orlean', 196.0), (u'marseilles_1', 284.0), (u'rennes', 180.0), (u'nantes', 207.0), (u'paris_2', 642.0), (u'nice', 203.0)]
 
-### 6 For each month, best store (most revenue)
+### 6. For each month, best store (most revenue)
 
 Get the store with highest revenue each month.
 
