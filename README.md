@@ -20,6 +20,8 @@
 
 ### [Lab 4: Hive Query](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%204:%20Hive%20Query.md)
 
+### [Lab 5: ]
+
 ## Spark Lab
 
 ### [Lab 6: City Revenue](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%206:%20Pyspark1.md)
