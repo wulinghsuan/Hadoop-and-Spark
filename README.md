@@ -2,7 +2,7 @@
 
 ## Hadoop Lab
 
-### Lab 1: HDFS
+### [Lab 1: HDFS](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%201:%20HDFS.md)
 
 - Download the most frequently downloaded e-book (in Plain Text UTF-8) from Project Gutenberg.
 - Create a directory called **raw** inside your HDFS home directory.
@@ -14,7 +14,13 @@
 - List your HDFS home directory.
 - Retrieve the fule from the **raw** directory from HDFS to the local filesystem and rename it **local.txt**.
 
-### Lab 6: Pyspark1.md
+### [Lab 2: Map Reducer](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%202:%20Map%20Reducer/README.md)
+
+### [Lab 3: Hive Table](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%203:%20Hive%20Table.md)
+
+### [Lab 4: Hive Query](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%204:%20Hive%20Query.md)
+
+### [Lab 6: Pyspark1.md](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%206:%20Pyspark1.md)
 
 Using city_revenue dataset
 
@@ -25,9 +31,9 @@ Using city_revenue dataset
 - Total revenue per store on the year
 - For each month, best store (most revenue)
 
-### Lab 7: Pyspark2.md
+### [Lab 7: Pyspark2.md](https://github.com/wulinghsuan/Hadoop-and-Spark/blob/master/Lab%207:%20Pyspark2.md)
 
-Using Taxi dataset
+Using [Taxi](https://training.ververica.com/setup/taxiData.html) dataset
 
 - Computed the total money earned by each driver for each day
 - Compute by hour:
