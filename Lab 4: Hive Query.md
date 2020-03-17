@@ -52,7 +52,20 @@ WHERE NOT array_contains(imdb_title_basics.genres, "Comedy");
 
 5) Top 10 movies directed by Quentin Tarantino
 
-LIMIT 5
+SELECT basic.primarytitle, rating.averagerating 
+FROM 
+    (SELECT * FROM imdb_title_crew 
+    LATERAL VIEW explode(director) exp as ndir) as crew
+    JOIN imdb_name_basics as name ON crew.ndir=name.nconst
+    JOIN imdb_title_ratings as rating on rating.tconst=crew.tconst   
+    JOIN imdb_title_basics as basic on basic.tconst=crew.tconst
+WHERE 
+    name.primaryname="Quentin Tarantino"
+    AND basic.titletype="movie"
+ORDER BY rating.averagerating DESC
+LIMIT 10;
 
 For the last query, try it in two queries first if you want.
 You'll see that you have to make a join on some array type. Hint: "explode"
+
+SELECT imdb_title_basics.primarytitle, imdb_title_ratings.averagerating
