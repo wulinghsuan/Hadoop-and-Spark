@@ -9,7 +9,11 @@ Run Spark Code
 > Spark Submit (via command or Oozie)
 > Notebooks (e.g. Zeppelin)
 
-Creat a new cell: `Ctrl` + `Alt` + `V`
+|Zeppelin||
+| --- | --- |
+|Creat a new cell above|`Ctrl` + `Alt` + `A`|
+|Creat a new cell below|`Ctrl` + `Alt` + `B`|
+|Run current paragraph|`Shift` + `Enter`|
 
 ## RDD Exercise
 
@@ -33,15 +37,11 @@ We can find a key value with:
 
 ### 1. Transform this rdd to get a rdd with format (city, store, month, revenue)
 
-For example:
-
-(“paris”, “paris_2”, “JAN”, 43)
-
-(“paris”, “paris_2”, “FEB”, 42)
-
-and so on.
+For example: (“paris”, “paris_2”, “JAN”, 43), (“paris”, “paris_2”, “FEB”, 42), and so on.
 
 > Usefull functions: `map`, `flatMap` or `flatMapValues`
+
+##### One way:
 
 ```
 %spark2.pyspark
@@ -56,6 +56,8 @@ rdd_result=rdd_store.flatMapValues(lambda v: v).\
                      map(lambda v: (v[0][0],v[0][1],v[1].split(" ")[0],v[1].split(" ")[1]))
 rdd_result.take(3)
 ```
+
+##### Second way:
 
 ```
 %spark2.pyspark
