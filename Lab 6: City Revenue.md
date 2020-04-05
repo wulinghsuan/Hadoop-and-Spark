@@ -8,9 +8,9 @@ rdd1.take(3)
 ```
 
 Run Spark Code
-> Spark Shell (e.g. `pyspark` cmd on edge-1)
-> Spark Submit (via command or Oozie)
-> Notebooks (e.g. Zeppelin)
+* Spark Shell (e.g. `pyspark` cmd on edge-1)
+* Spark Submit (via command or Oozie)
+* Notebooks (e.g. Zeppelin)
 
 |Zeppelin||
 | --- | --- |
