@@ -1,8 +1,11 @@
 ## Background Knowledge
 
+```
+pyspark
 rdd1 = sc.parallelize([1, 2, 3, 4])
 rdd1.collect()
 rdd1.take(3)
+```
 
 Run Spark Code
 > Spark Shell (e.g. `pyspark` cmd on edge-1)
